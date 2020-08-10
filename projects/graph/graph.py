@@ -140,6 +140,8 @@ class Graph:
             # If our last_vertex is never visited then add it to visited
             if last_vertex not in visited:
                 visited.add(last_vertex)
+                # Print out the last_vertex for debugging
+                print(last_vertex)
 
             # Check if our last_vertex is at our destination
             if last_vertex == destination_vertex:
@@ -178,6 +180,8 @@ class Graph:
             # If our last_vertex is never visited then add it to visited
             if last_vertex not in visited:
                 visited.add(last_vertex)
+                # Print out the last_vertex for debugging
+                print(last_vertex)
 
             # Check if our last_vertex is at our destination
             if last_vertex == destination_vertex:
