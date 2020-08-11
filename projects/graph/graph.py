@@ -108,9 +108,9 @@ class Graph:
             print(starting_vertex)
 
             # Iterate through the neighbors of the starting vertex
-            for neighbor in self.get_neighbors(starting_vertex):
-                # Use recursion to cycle through the neighbors passing the neighbor and visited
-                self.dft_recursive(neighbor, visited)
+            for next_vertex in self.get_neighbors(starting_vertex):
+                # Use recursion to cycle through the neighbors passing the neighbor(next_vertex) and visited
+                self.dft_recursive(next_vertex, visited)
         else:
             # Base Case - When all neighbors have been visited then just return None
             return None
