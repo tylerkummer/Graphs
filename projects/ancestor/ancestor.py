@@ -72,4 +72,5 @@ def earliest_ancestor(ancestors, starting_node):
 
     if longest_path == []:
         return -1
-    return longest_path[-1]
+    else:
+        return longest_path[-1]
