@@ -111,9 +111,8 @@ class SocialGraph:
 
             if v not in visited:
                 visited[v] = path
-                friends = self.friendships[v]
 
-                for friend in friends:
+                for friend in self.friendships[v]:
                     path_copy = list(path)
                     path_copy.append(friend)
                     q.enqueue(path_copy)
